@@ -1,0 +1,2 @@
+# Priemer
+Priemer čísel
