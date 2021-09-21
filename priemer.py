@@ -1,9 +1,11 @@
-def priemer():
-    num1 = int(input("Zadaj prvé číslo: "))
-    num2 = int(input("Zadaj druhé číslo: "))
-    num3 = int(input("Zadaj tretie číslo: "))
-    priemer = int((num1 + num2 + num3) / 3)
+def priemer(pocet):
+    sucet = 0
+    for i in range(0, pocet):
+        num = int(input("Zadaj číslo: "))
+        sucet = sucet + num              
+    priemer = int(sucet / pocet)
 
     return priemer
 
-print(priemer())
+pocet = int(input("Koľko čísel chceš zadať: "))
+print(priemer(pocet))
